@@ -6,13 +6,6 @@
     <title>Avion | Мебель будущего с вечным дизайном</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
-    <!-- Подключение шрифтов Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="page">
     <header class="header">
@@ -79,18 +72,18 @@
     <main class="main">
       <section class="hero">
         <div class="hero__content">
-          <h1 class="hero__title">
-            Бренд мебели будущего с&nbsp;вечным дизайном
-          </h1>
+          <div class="hero__content--upper">
+            <h1 class="hero__title">
+              Бренд мебели будущего с&nbsp;вечным дизайном
+            </h1>
+            <button class="button button--primary">Посмотреть коллекцию</button>
+          </div>
           <p class="hero__description">
             Новая эра экологичной мебели с&nbsp;Avelon&nbsp;&mdash; французским
             люксовым розничным брендом с&nbsp;красивыми шрифтами, изящными
             цветами и прекрасным способом показывать вещи в&nbsp;цифровом виде
             с&nbsp;использованием современных веб-технологий.
           </p>
-          <button class="button button--primary hero__cta">
-            Посмотреть коллекцию
-          </button>
         </div>
         <div class="hero__image">
           <img
@@ -102,7 +95,7 @@
       </section>
 
       <section class="features" id="features">
-        <h2 class="section-title">Что делает наш бренд особенным</h2>
+        <h3 class="section-title--special">Что делает наш бренд особенным</h3>
         <div class="features__grid">
           <article class="feature-card">
             <img
@@ -110,7 +103,7 @@
               alt="Иконка доставки"
               class="feature-card__icon"
             />
-            <h3 class="feature-card__title">Доставка на&nbsp;следующий день</h3>
+            <h3 class="feature-card__title">Быстрая доставка</h3>
             <p class="feature-card__description">
               Сделайте заказ до&nbsp;15:00 и&nbsp;получите его на&nbsp;следующий
               день&nbsp;&mdash; по&nbsp;умолчанию
@@ -123,7 +116,7 @@
               alt="Иконка качества"
               class="feature-card__icon"
             />
-            <h3 class="feature-card__title">Создано настоящими мастерами</h3>
+            <h3 class="feature-card__title">Настоящие мастера</h3>
             <p class="feature-card__description">
               Ручная работа, выполненная с&nbsp;настоящей страстью
               и&nbsp;мастерством
@@ -136,7 +129,7 @@
               alt="Иконка покупки"
               class="feature-card__icon"
             />
-            <h3 class="feature-card__title">Непревзойдённые цены</h3>
+            <h3 class="feature-card__title">Низкие цены</h3>
             <p class="feature-card__description">
               Для наших материалов и&nbsp;качества вы&nbsp;не&nbsp;найдёте
               лучшей цены нигде
@@ -149,7 +142,7 @@
               alt="Иконка экологии"
               class="feature-card__icon"
             />
-            <h3 class="feature-card__title">Переработанная упаковка</h3>
+            <h3 class="feature-card__title">Поддержка экологии</h3>
             <p class="feature-card__description">
               Мы&nbsp;используем 100% переработанную упаковку, чтобы уменьшить
               наш экологический след
@@ -208,9 +201,9 @@
         </button>
       </section>
 
-      <section class="products-section products-section--popular" id="popular">
+      <section class="products-section" id="popular">
         <h2 class="section-title">Наши популярные товары</h2>
-        <div class="products-grid">
+        <div class="popular-grid">
           <article class="product-card product-card--popular">
             <img
               src="./assets/img/sofa.png"
@@ -243,7 +236,9 @@
             <p class="product-card__price">&pound;250</p>
           </article>
         </div>
-        <button class="button button--secondary">Посмотреть коллекцию</button>
+        <button class="button button--secondary products-section__cta">
+          Посмотреть коллекцию
+        </button>
       </section>
 
       <section class="newsletter">
@@ -273,21 +268,25 @@
 
       <section class="about">
         <div class="about__content">
-          <h2 class="about__title">
-            От&nbsp;студии в&nbsp;Лондоне до&nbsp;мирового бренда с&nbsp;более
-            чем 400 точками
-          </h2>
-          <p class="about__description">
-            Когда мы&nbsp;основали Avion, идея была проста: сделать качественную
-            мебель доступной и&nbsp;понятной для массового рынка.
-          </p>
-          <p class="about__description">
-            Ручная и&nbsp;тщательно созданная мебель и&nbsp;товары для
-            дома&nbsp;&mdash; это&nbsp;то, чем мы&nbsp;живём, дышим и&nbsp;что
-            создаём, поэтому наш бутик в&nbsp;Челси стал центром для лондонского
-            сообщества дизайнеров интерьера.
-          </p>
-          <h3 class="about__contact-title">Связаться с&nbsp;нами</h3>
+          <div class="about__content--upper">
+            <h2 class="about__title">
+              От&nbsp;студии в&nbsp;Лондоне до&nbsp;мирового бренда с&nbsp;более
+              чем 400 точками
+            </h2>
+            <p class="about__description">
+              Когда мы&nbsp;основали Avion, идея была проста: сделать
+              качественную мебель доступной и&nbsp;понятной для массового рынка.
+            </p>
+            <p class="about__description">
+              Ручная и&nbsp;тщательно созданная мебель и&nbsp;товары для
+              дома&nbsp;&mdash; это&nbsp;то, чем мы&nbsp;живём, дышим и&nbsp;что
+              создаём, поэтому наш бутик в&nbsp;Челси стал центром для
+              лондонского сообщества дизайнеров интерьера.
+            </p>
+          </div>
+          <button class="button button--secondary button-connect">
+            Связаться с&nbsp;нами
+          </button>
         </div>
         <div class="about__image">
           <img
@@ -365,21 +364,21 @@
             </li>
           </ul>
         </div>
-      </div>
 
-      <div class="footer__newsletter">
-        <h3 class="footer__newsletter-title">Подпишитесь на&nbsp;рассылку</h3>
-        <form class="footer__form">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            class="footer__input"
-            required
-          />
-          <button type="submit" class="button button--primary footer__submit">
-            Подписаться
-          </button>
-        </form>
+        <div class="footer__newsletter">
+          <h3 class="footer__newsletter-title">Подпишитесь на&nbsp;рассылку</h3>
+          <form class="footer__form">
+            <input
+              type="email"
+              placeholder="your@email.com"
+              class="footer__input"
+              required
+            />
+            <button type="submit" class="button button--primary footer__submit">
+              Подписаться
+            </button>
+          </form>
+        </div>
       </div>
 
       <div class="footer__bottom">
