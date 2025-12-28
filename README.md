@@ -6,5 +6,4 @@
 
 ## Ссылки
 
-- [Публичная страница на GitHub Pages](https://zovulpes.github.io/
-  dpo/)
+- [Публичная страница на GitHub Pages](https://zovulpes.github.io/dpo/)
